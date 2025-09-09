@@ -14,7 +14,7 @@ class arquitectos_seed extends Seeder
     public function run(): void
     {
         DB::table('arquitectos')->insert([
-            'user_id' => 1, 
+            'user_id' => 1,
             'Cedula_Profesional' => 'A123456',
             'Especialidad' => 'Arquitectura Residencial',
             'Telefono' => '6141234567',
@@ -25,7 +25,7 @@ class arquitectos_seed extends Seeder
         ]);
         
         DB::table('arquitectos')->insert([
-            'user_id' => 4,  
+            'user_id' => 2,
             'Cedula_Profesional' => 'A987654',
             'Especialidad' => 'Arquitectura Comercial',
             'Telefono' => '6149876543',

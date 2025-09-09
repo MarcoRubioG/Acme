@@ -15,24 +15,99 @@ class usuarios_seed extends Seeder
      */
     public function run(): void
     {
-       DB::table('arquitectos')->insert([
-            'user_id' => 1,
-            'Cedula_Profesional' => 'A123456',
-            'Especialidad' => 'Arquitectura Residencial',
-            'Telefono' => '6141234567',
-            'Fecha_Ingreso' => '2020-01-15',
+       DB::table('users')->insert([
+    'Nombre' => 'Juan Carlos',
+    'Apellido_Paterno' => 'García',
+    'Apellido_Materno' => 'López',
+    'email=' => 'juan.garcia@email.com',  // Cambiar aquí
+    'email_verified_at' => now(),
+    'password' => Hash::make('password123'),
+    'rol' => 1,
+    'Activo' => true,
+    'remember_token' => Str::random(10),
+    'created_at' => now(),
+    'updated_at' => now()
+]);
+
+DB::table('users')->insert([
+    'Nombre' => 'María Elena',
+    'Apellido_Paterno' => 'Martínez',
+    'Apellido_Materno' => 'Rodríguez',
+    'email=' => 'maria.martinez@email.com', 
+    'email_verified_at' => now(),
+    'password' => Hash::make('password123'),
+    'rol' => 1,
+    'Activo' => true,
+    'remember_token' => Str::random(10),
+    'created_at' => now(),
+    'updated_at' => now()
+]);
+DB::table('users')->insert([
+            'Nombre' => 'Pedro',
+            'Apellido_Paterno' => 'González',
+            'Apellido_Materno' => 'Morales',
+            'email=' => 'pedro.gonzalez@email.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password123'),
+            'rol' => 0,
             'Activo' => true,
+            'remember_token' => Str::random(10),
             'created_at' => now(),
             'updated_at' => now()
         ]);
         
-        DB::table('arquitectos')->insert([
-            'user_id' => 2,
-            'Cedula_Profesional' => 'A987654',
-            'Especialidad' => 'Arquitectura Comercial',
-            'Telefono' => '6149876543',
-            'Fecha_Ingreso' => '2019-06-10',
+        DB::table('users')->insert([
+            'Nombre' => 'Ana',
+            'Apellido_Paterno' => 'Ramírez',
+            'Apellido_Materno' => 'Torres',
+            'email=' => 'ana.ramirez@email.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password123'),
+            'rol' => 0,
             'Activo' => true,
+            'remember_token' => Str::random(10),
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        
+        DB::table('users')->insert([
+            'Nombre' => 'Roberto',
+            'Apellido_Paterno' => 'Hernández',
+            'Apellido_Materno' => 'Castillo',
+            'email=' => 'roberto.hernandez@email.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password123'),
+            'rol' => 0,
+            'Activo' => true,
+            'remember_token' => Str::random(10),
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        
+        DB::table('users')->insert([
+            'Nombre' => 'Laura',
+            'Apellido_Paterno' => 'Mendoza',
+            'Apellido_Materno' => 'Vázquez',
+            'email=' => 'laura.mendoza@email.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password123'),
+            'rol' => 0,
+            'Activo' => true,
+            'remember_token' => Str::random(10),
+            'created_at' => now(),
+            'updated_at' => now()
+        ]);
+        
+        DB::table('users')->insert([
+            'Nombre' => 'Carlos',
+            'Apellido_Paterno' => 'Jiménez',
+            'Apellido_Materno' => 'Ruiz',
+            'email=' => 'carlos.jimenez@email.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password123'),
+            'rol' => 0,
+            'Activo' => true,
+            'remember_token' => Str::random(10),
             'created_at' => now(),
             'updated_at' => now()
         ]);

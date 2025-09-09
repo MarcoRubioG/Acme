@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('Estado_Proyecto',50);
             $table->date('Fecha_Inicio');
             $table->date('Fecha_Estimada_Fin',50);
-            $table->decimal('Presupuesto_Estimado');
+            $table->decimal('Presupuesto_Estimado',12,2);
             $table->text('Descripcion');
             $table->timestamps();
         });
